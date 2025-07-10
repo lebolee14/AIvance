@@ -13,7 +13,6 @@ AIvance is a platform that combines Applicant Tracking System (ATS) functionalit
 
 ## System Architecture
 
-### High-Level Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
