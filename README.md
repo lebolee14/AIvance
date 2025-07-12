@@ -3,6 +3,7 @@
 # AIvance
 
 **AIvance** is a platform that combines Applicant Tracking System (ATS) functionality with AI-powered interview preparation and continuous feedback loops. The system analyzes resumes against job descriptions, provides personalized interview preparation, and offers learning recommendations based on identified skill gaps.
+### Contributors - Wallace & Lebogang
 
 ## 🔗 Submission Links
 
