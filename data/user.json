@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "John Smith",
+      "email": "john@example.com",
+      "password": "password123",
+      "userType": "job-seeker",
+      "createdAt": "2025-07-01T10:00:00Z",
+      "stats": {
+        "resumeScore": 87,
+        "applications": 24,
+        "interviewRating": 8.5,
+        "profileComplete": 92
+      }
+    },
+    {
+      "id": 2,
+      "username": "Sarah Johnson",
+      "email": "sarah@example.com",
+      "password": "password456",
+      "userType": "job-seeker",
+      "createdAt": "2025-07-05T14:30:00Z",
+      "stats": {
+        "resumeScore": 85,
+        "applications": 18,
+        "interviewRating": 7.8,
+        "profileComplete": 88
+      }
+    }
+  ]
+}

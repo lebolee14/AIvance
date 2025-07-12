@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>AIvance - Resume</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <style type="text/tailwindcss">
+        :root {
+            --primary-color: #1e40af;
+            --secondary-color: #dbeafe;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --background-color: #f3f4f6;
+            --card-background: #ffffff;
+            --border-color: #e5e7eb;
+            --gradient-start: #3b82f6;
+            --gradient-end: #1e40af;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom right, var(--background-color), #e5e7eb);
+        }
+        .nav-link.active {
+            color: var(--primary-color);
+            font-weight: 700;
+            background: linear-gradient(to right, var(--secondary-color), #eff6ff);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link:hover {
+            background: linear-gradient(to right, #f0f7ff, #dbeafe);
+            transform: translateX(4px);
+            transition: all 0.3s ease;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: var(--card-background);
+            border-radius: 1rem;
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        .header-shadow {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        .progress-bar {
+            background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+        }
+    </style>
+</head>
+<body class="text-[var(--text-primary)]">
+    <div class="flex min-h-screen">
+        <aside class="w-64 flex-shrink-0 bg-white border-r border-[var(--border-color)]">
+            <div class="flex items-center justify-center h-20 border-b border-[var(--border-color)] bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-end)]">
+                <div class="flex items-center gap-3 text-white">
+                    <svg class="h-8 w-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+                    </svg>
+                    <h1 class="text-xl font-extrabold">AIvance</h1>
+                </div>
+            </div>
+            <nav class="mt-6 px-4 space-y-2">
+                <a class="nav-link flex items-center gap-3 rounded-lg px-4 py-3 text-base font-semibold text-[var(--text-secondary)] transition-all" href="dashboard.html" data-page="dashboard">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    Dashboard
+                </a>
+                <a class="nav-link flex items-center gap-3 rounded-lg px-4 py-3 text-base font-semibold text-[var(--text-secondary)] transition-all" href="interview.html" data-page="interview">
+                    <span class="material-symbols-outlined">mic</span>
+                    Interview
+                </a>
+                <a class="nav-link active flex items-center gap-3 rounded-lg px-4 py-3 text-base font-semibold transition-all" href="resume.html" data-page="resume">
+                    <span class="material-symbols-outlined">description</span>
+                    Resume
+                </a>
+                <a class="nav-link flex items-center gap-3 rounded-lg px-4 py-3 text-base font-semibold text-[var(--text-secondary)] transition-all" href="jobs.html" data-page="jobs">
+                    <span class="material-symbols-outlined">work</span>
+                    Jobs
+                </a>
+                <a class="nav-link flex items-center gap-3 rounded-lg px-4 py-3 text-base font-semibold text-[var(--text-secondary)] transition-all" href="resources.html" data-page="resources">
+                    <span class="material-symbols-outlined">library_books</span>
+                    Resources
+                </a>
+            </nav>
+        </aside>
+        <div class="flex-1">
+            <header class="flex items-center justify-between bg-white border-b border-[var(--border-color)] px-8 h-20 header-shadow">
+                <div class="flex-1">
+                    <h2 class="text-3xl font-extrabold text-[var(--text-primary)]">Resume Builder</h2>
+                    <p class="text-base text-[var(--text-secondary)] mt-1">Optimize your resume with AI insights</p>
+                </div>
+                <div class="flex items-center gap-6">
+                    <button class="relative rounded-full p-2 text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] transition-colors">
+                        <span class="material-symbols-outlined text-2xl">notifications</span>
+                        <span class="absolute top-0 right-0 flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--primary-color)] opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-[var(--primary-color)]"></span>
+                        </span>
+                    </button>
+                    <div class="user-menu relative">
+                        <button class="user-avatar w-12 h-12 rounded-full bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-end)] text-white text-lg font-bold flex items-center justify-center" id="userAvatar" aria-label="User Menu" onclick="toggleUserMenu()">U</button>
+                        <div class="dropdown-menu absolute right-0 mt-2 w-56 bg-white border border-[var(--border-color)] rounded-xl shadow-2xl hidden z-50" id="userDropdown">
+                            <a href="#profile" class="block px-4 py-3 text-sm font-medium text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] rounded-t-xl">Profile</a>
+                            <a href="#settings" class="block px-4 py-3 text-sm font-medium text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]">Settings</a>
+                            <a href="#" class="block px-4 py-3 text-sm font-medium text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] rounded-b-xl" onclick="logout()">Sign Out</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="p-8 grid grid-cols-3 gap-6">
+                <div class="col-span-2 bg-[var(--card-background)] border border-[var(--border-color)] rounded-xl p-6 card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="material-symbols-outlined text-[var(--primary-color)] text-2xl">description</span>
+                        <h3 class="text-xl font-bold text-[var(--text-primary)]">Upload Your Resume</h3>
+                    </div>
+                    <p class="text-sm text-[var(--text-secondary)] mb-4">Upload your resume to receive AI-driven feedback and optimization suggestions.</p>
+                    <input type="file" accept=".pdf,.doc,.docx" class="p-3 border border-[var(--border-color)] rounded-md w-full mb-4"/>
+                    <button class="bg-[var(--primary-color)] text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">Analyze Resume</button>
+                </div>
+                <div class="bg-[var(--card-background)] border border-[var(--border-color)] rounded-xl p-6 card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="material-symbols-outlined text-[var(--primary-color)] text-2xl">check_circle</span>
+                        <h3 class="text-xl font-bold text-[var(--text-primary)]">Resume Progress</h3>
+                    </div>
+                    <p class="text-sm text-[var(--text-secondary)] mb-2">Profile Completion: 92%</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                        <div class="progress-bar h-2.5 rounded-full" style="width: 92%"></div>
+                    </div>
+                    <p class="text-sm text-[var(--text-secondary)]">Add skills and experience to boost your score!</p>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        // Mock user data
+        const mockUsers = {
+            users: [
+                {
+                    id: 1,
+                    username: "John Smith",
+                    email: "john@example.com",
+                    password: "password123",
+                    userType: "job-seeker",
+                    createdAt: "2025-07-01T10:00:00Z",
+                    stats: {
+                        resumeScore: 87,
+                        applications: 24,
+                        interviewRating: 8.5,
+                        profileComplete: 92
+                    }
+                },
+                {
+                    id: 2,
+                    username: "Sarah Johnson",
+                    email: "sarah@example.com",
+                    password: "password456",
+                    userType: "job-seeker",
+                    createdAt: "2025-07-05T14:30:00Z",
+                    stats: {
+                        resumeScore: 85,
+                        applications: 18,
+                        interviewRating: 7.8,
+                        profileComplete: 88
+                    }
+                }
+            ]
+        };
+
+        // Simulate fetchUsers for client-side testing
+        async function fetchUsers() {
+            return Promise.resolve(mockUsers.users);
+        }
+
+        // Handle navigation and active state
+        function setActiveNav() {
+            const currentPage = window.location.pathname.split('/').pop() || 'resume.html';
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            const authToken = localStorage.getItem('authToken');
+            const user = JSON.parse(localStorage.getItem('user'));
+            if (!authToken || !user) {
+                window.location.href = 'index.html';
+                return;
+            }
+            document.getElementById('userAvatar').textContent = user.username ? user.username.charAt(0).toUpperCase() : 'U';
+            setActiveNav();
+        });
+
+        // Handle navigation clicks
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const href = this.getAttribute('href');
+                window.location.href = href;
+            });
+        });
+
+        function logout() {
+            localStorage.removeItem('authToken');
+            localStorage.removeItem('user');
+            window.location.href = 'index.html';
+        }
+
+        function toggleUserMenu() {
+            const dropdown = document.getElementById('userDropdown');
+            dropdown.classList.toggle('hidden');
+        }
+
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.user-menu')) {
+                document.getElementById('userDropdown').classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
