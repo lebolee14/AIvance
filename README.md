@@ -23,8 +23,8 @@
 ┌─────────────────────────────────────────────────────────────────┐
 │                    FRONTEND LAYER                               │
 ├─────────────────────────────────────────────────────────────────┤
-│  Web App (HTML/CSS/JS)  │  API Documentation Portal            │
-│  Dashboard & Reports    │  Mobile-Responsive Design            │
+│  Web App (HTML/CSS/JS)  │  API Documentation Portal             │
+│  Dashboard & Reports    │  Mobile-Responsive Design             │
 └─────────────────────────────────────────────────────────────────┘
                                     │
                                     ▼
@@ -32,7 +32,7 @@
 │                    API GATEWAY LAYER                            │
 ├─────────────────────────────────────────────────────────────────┤
 │  Authentication  │  Rate Limiting  │  Request Routing           │
-│  Load Balancing  │  API Versioning │  Request/Response Logging   │
+│  Load Balancing  │  API Versioning │  Request/Response Logging  │
 └─────────────────────────────────────────────────────────────────┘
                                     │
                                     ▼
