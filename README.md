@@ -21,45 +21,44 @@
 ## 🏗️ System Architecture
 
 ┌─────────────────────────────────────────────────────────────────┐
-│ FRONTEND LAYER │
+│                    FRONTEND LAYER                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ Web App (HTML/CSS/JS) │ API Documentation Portal │
-│ Dashboard & Reports │ Mobile-Responsive Design │
+│  Web App (HTML/CSS/JS)  │  API Documentation Portal            │
+│  Dashboard & Reports    │  Mobile-Responsive Design            │
 └─────────────────────────────────────────────────────────────────┘
-│
-▼
+                                    │
+                                    ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│ API GATEWAY LAYER │
+│                    API GATEWAY LAYER                            │
 ├─────────────────────────────────────────────────────────────────┤
-│ Authentication │ Rate Limiting │ Request Routing │
-│ Load Balancing │ API Versioning │ Request/Response Logging │
+│  Authentication  │  Rate Limiting  │  Request Routing           │
+│  Load Balancing  │  API Versioning │  Request/Response Logging   │
 └─────────────────────────────────────────────────────────────────┘
-│
-▼
+                                    │
+                                    ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│ BACKEND SERVICES │
+│                  BACKEND SERVICES                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ User Service │ Document Service │ ATS Service │ AI Service │
-│ Interview │ Scoring Service │ Learning │ Notification │
-│ Service │ Analytics Service│ Service │ Service │
+│ User Service │ Document Service │ ATS Service │ AI Service      │
+│ Interview    │ Scoring Service  │ Learning    │ Notification    │
+│ Service      │ Analytics Service│ Service     │ Service         │
 └─────────────────────────────────────────────────────────────────┘
-│
-▼
+                                    │
+                                    ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│ DATA LAYER │
+│                    DATA LAYER                                   │
 ├─────────────────────────────────────────────────────────────────┤
-│ Redis │ MongoDB │ File Storage │
-│ (Cache/Session)│ (Documents) │ (Resume/Media Files) │
+│ Redis          │ MongoDB        │ File Storage                  │
+│ (Cache/Session)│ (Documents)    │ (Resume/Media Files)          │
 └─────────────────────────────────────────────────────────────────┘
-│
-▼
+                                    │
+                                    ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│ EXTERNAL SERVICES │
+│                        EXTERNAL SERVICES                                │
 ├─────────────────────────────────────────────────────────────────────────┤
-│ OpenAI/Claude │ Cloud Storage │ Chatbots │ Microsoft Azure │
-│ GPT-4 API │ AWS S3/GCP │ DigitalOcean│ Voice Assistant & STT API │
+│ OpenAI/Claude │ Cloud Storage │ Chatbots    │ Microsoft Azure           │
+│ GPT-4 API     │ AWS S3/GCP    │ DigitalOcean│ Voice Assistant & STT API │
 └─────────────────────────────────────────────────────────────────────────┘
-
 
 ## 🧱 Technology Stack
 
